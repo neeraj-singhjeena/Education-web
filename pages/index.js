@@ -68,10 +68,10 @@ export default function Home() {
                     Contact Us
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-purple-700 py-2 px-6 text-center pt-5 border-b-2 md:border-b-0 ">
                   <Link
                     href="tel:+9988763872"
-                    className="bg-transparent border-2 border-white hover:bg-black hover:text-white-600 text-white font-semibold py-2 px-6 rounded-md transition  "
+                    className="bg-transparent border-2  hover:text-white-600 text-white font-semibold py-2 px-6 rounded-md transition  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent "
                   >
                     Call Us
                   </Link>
@@ -124,11 +124,13 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex justify-center mt-8">
-              <button className="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 transition duration-200">
-                Register Now
-              </button>
-            </div>
+            <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+              <Link href="/Form" onClick={() => setNavbar(!navbar)}>
+                <div className="border-2 border-gray-400 text-white bg-red-900  hover:bg-black ">
+                  Registration Form
+                </div>
+              </Link>
+            </li>
           </section>
 
           {/* Features Section */}
@@ -172,17 +174,17 @@ export default function Home() {
                   Learn at your own pace and schedule, allowing you to balance
                   your language learning journey with other commitments.
                 </p>
-                <div className="mt-4">
-                  <button className="bg-white text-red-800 py-2 px-4 rounded hover:bg-gray-100 transition duration-200">
+                {/* <div className="mt-4">
+                  <button className="bg-white text-red-800 py-2 px-4 rounded hover:bg-gray-100 transition duration-200" >
                     Get Started
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </section>
         </div>
       </div>
-      <div className="max-w-md sm:max-w-lg lg:max-w-4xl mx-auto p-4 md:p-6 lg:p-8 bg-white rounded-lg shadow-md">
+      <div className="max-w-md sm:max-w-lg lg:max-w-4xl mx-auto p-4 md:p-6 lg:p-8  rounded-lg shadow-md">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
           Why Choose Us?
         </h2>

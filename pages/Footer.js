@@ -12,7 +12,7 @@ const Footer = () => {
             alt="Higher Heights Logo"
             className="w-12 h-12"
           /> */}
-          <h1 className="text-lg font-semibold">HIGHER HEIGHTS</h1>
+          <h1 className="text-lg text-black font-semibold">HIGHER HEIGHTS</h1>
         </div>
 
         {/* Social Icons */}
@@ -33,7 +33,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 text-center md:text-left">
         {/* Courses Section */}
         <div>
-          <h2 className="text-lg font-bold">Courses</h2>
+          <h2 className="text-lg font-bold text-black  ">Courses</h2>
           <ul className="text-gray-600 mt-2 space-y-1">
             <li>IELTS</li>
             <li>Spoken English</li>
@@ -43,7 +43,7 @@ const Footer = () => {
 
         {/* Pages Section */}
         <div>
-          <h2 className="text-lg font-bold">Pages</h2>
+          <h2 className="text-lg font-bold text-black ">Pages</h2>
           <ul className="text-gray-600 mt-2 space-y-1">
             <li>About</li>
             <li>Courses</li>
@@ -53,7 +53,7 @@ const Footer = () => {
 
         {/* Contact Section */}
         <div>
-          <h2 className="text-lg font-bold">Contact Details</h2>
+          <h2 className="text-lg font-bold text-black ">Contact Details</h2>
           <p className="text-gray-600 mt-2">
             Address: Jct Thaper colony chohal, Distt. Hoshiarpur, Punjab, Pin -
             144527

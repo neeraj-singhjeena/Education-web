@@ -1,6 +1,7 @@
 // components/AboutUsSection.js
 import Link from "next/link";
 import Footer from "./Footer";
+
 // import Link from "next/link";
 const About = () => {
   return (
@@ -56,7 +57,8 @@ const About = () => {
               learning environment where you can unlock your potential.
             </p>
             <p className="text-sm md:text-base text-gray-600 text-center md:text-left">
-              Rajnish Kaur <br />
+              Rajnish Kaur
+              <br />
               Owner
             </p>
           </section>
