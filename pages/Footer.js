@@ -3,9 +3,9 @@
 const Footer = () => {
   return (
     <footer className="bg-gray-100 py-8 px-4">
-      {/* Logo and Social Icons */}
+      
       <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-        {/* Logo Section */}
+       
         <div className="flex items-center space-x-4">
           {/* <img
             src="/logo.png" // Your logo path
@@ -15,7 +15,7 @@ const Footer = () => {
           <h1 className="text-lg text-black font-semibold">HIGHER HEIGHTS</h1>
         </div>
 
-        {/* Social Icons */}
+        
         <div className="flex space-x-6">
           <a href="#" className="text-gray-600">
             <i className="fab fa-facebook-square text-2xl"></i>
@@ -29,9 +29,9 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Middle Content (Courses, Pages, Contact) */}
+      
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 text-center md:text-left">
-        {/* Courses Section */}
+       
         <div>
           <h2 className="text-lg font-bold text-black  ">Courses</h2>
           <ul className="text-gray-600 mt-2 space-y-1">
@@ -41,7 +41,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Pages Section */}
+        
         <div>
           <h2 className="text-lg font-bold text-black ">Pages</h2>
           <ul className="text-gray-600 mt-2 space-y-1">
@@ -51,7 +51,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Section */}
+        
         <div>
           <h2 className="text-lg font-bold text-black ">Contact Details</h2>
           <p className="text-gray-600 mt-2">
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Section (Copyright and WhatsApp) */}
+      
       <div className="mt-8 flex flex-col md:flex-row justify-between items-center">
         <div className="text-gray-600">
           <p>Copyright © 2024 Higher Heights</p>
@@ -87,7 +87,7 @@ const Footer = () => {
             />
           </a>
         </div>
-        {/* WhatsApp Icon */}
+        
       </div>
     </footer>
   );
