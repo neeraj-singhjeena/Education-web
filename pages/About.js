@@ -14,14 +14,14 @@ const About = () => {
               About Us
             </h1>
 
-            {/* Subheading */}
+            
             <p className="mt-4 text-base md:text-xl">
               Discover Our Mission: Empowering Individuals Through English
               Language. Learn About Our Commitment to Excellence in English
               Language.
             </p>
 
-            {/* Contact Us Button */}
+            
             <div className="mt-8">
               <a
                 href="mailto:institute.hhie@gmail.com"
@@ -46,7 +46,7 @@ const About = () => {
             </p>
           </section>
 
-          {/* Learn Something Every Day Section */}
+          
           <section className="mb-12">
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center md:text-left">
               Learn Something Every Day
@@ -63,7 +63,7 @@ const About = () => {
             </p>
           </section>
 
-          {/* What is our vision Section */}
+          
           <section>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center md:text-left">
               What is our vision
@@ -86,7 +86,7 @@ const About = () => {
                 </p>
               </div>
 
-              {/* Diverse Team Section */}
+              
               <div className="bg-white p-6 shadow-lg rounded-lg">
                 <p className="text-base md:text-lg">
                   Our diverse team of expert language instructors brings a
