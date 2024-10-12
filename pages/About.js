@@ -9,7 +9,7 @@ const About = () => {
       <section className="relative h-80 bg-gradient-to-r from-red-900 to-red-800 text-white flex items-center mt-20">
         <div className="container mx-auto px-6">
           <div className="max-w-xl">
-            {/* About Us Title */}
+            
             <h1 className="text-3xl md:text-5xl font-bold leading-tight">
               About Us
             </h1>
