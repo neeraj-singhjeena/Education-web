@@ -2,7 +2,7 @@ import { useState } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 export default function Contact() {
-  // State for form fields
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -15,10 +15,7 @@ export default function Contact() {
 
   
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent form from reloading the page
-
-    
-
+    e.preventDefault();
     
     setSubmitted(true);
 
@@ -33,7 +30,7 @@ export default function Contact() {
     
     setTimeout(() => {
       setSubmitted(false);
-    }, 3000); // Message disappears after 3 seconds
+    }, 3000); 
   };
 
   
@@ -44,7 +41,7 @@ export default function Contact() {
   return (
     <>
       <div className="bg-red-900 text-white min-h-screen mt-20">
-        {/* Header Section */}
+        
         <section className="bg-maroon-500 text-white p-8 text-center">
           <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
           <p className="text-lg">
@@ -54,7 +51,7 @@ export default function Contact() {
           </p>
         </section>
 
-        {/* Contact Details and Form Section */}
+       
         <div className="container mx-auto px-6 py-12 grid lg:grid-cols-2 gap-12">
           {/* Contact Details */}
           <div className="space-y-6">
