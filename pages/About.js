@@ -1,12 +1,12 @@
 // components/AboutUsSection.js
 import Link from "next/link";
 import Footer from "./Footer";
-
+import Navbar from "./Navbar";
 // import Link from "next/link";
 const About = () => {
   return (
     <>
-      <section className="relative h-80 bg-gradient-to-r from-red-900 to-red-800 text-white flex items-center ">
+      <section className="relative h-80 bg-gradient-to-r from-red-900 to-red-800 text-white flex items-center mt-20">
         <div className="container mx-auto px-6">
           <div className="max-w-xl">
             {/* About Us Title */}
@@ -100,6 +100,7 @@ const About = () => {
         </div>
       </div>
       <Footer />
+      <Navbar></Navbar>
     </>
   );
 };

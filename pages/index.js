@@ -96,7 +96,7 @@ export default function Home() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Course Cards */}
-              <div className="bg-white p-6 shadow-lg rounded-lg">
+              <div className="bg-white p-6 shadow-lg rounded-lg  hover:bg-red-900  border-red-900  md:hover:text-red-600 md:hover:bg-transparent ">
                 <h3 className="text-xl font-semibold mb-2">
                   IELTS Preparation Course
                 </h3>
@@ -105,7 +105,7 @@ export default function Home() {
                   practice materials.
                 </p>
               </div>
-              <div className="bg-white p-6 shadow-lg rounded-lg">
+              <div className="bg-white p-6 shadow-lg rounded-lg  hover:bg-red-900  border-red-900  md:hover:text-red-600 md:hover:bg-transparent">
                 <h3 className="text-xl font-semibold mb-2">
                   PTE Academic Preparation Course
                 </h3>
@@ -114,7 +114,7 @@ export default function Home() {
                   practice exercises.
                 </p>
               </div>
-              <div className="bg-white p-6 shadow-lg rounded-lg">
+              <div className="bg-white p-6 shadow-lg rounded-lg  hover:bg-red-900  border-red-900  md:hover:text-red-600 md:hover:bg-transparent">
                 <h3 className="text-xl font-semibold mb-2">
                   Spoken English Course
                 </h3>

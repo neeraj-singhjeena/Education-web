@@ -1,11 +1,12 @@
 import React from "react";
 import Footer from "./Footer";
-
+import Link from "next/link";
+import Navbar from "./Navbar";
 function Courses() {
   return (
     <>
       <div className="bg-gray-900">
-        <div className="min-h-screen bg-gray-100 py-12">
+        <div className="min-h-screen bg-gray-100 py-12 mt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Courses Section */}
             <section className="mb-12 text-black">
@@ -47,12 +48,13 @@ function Courses() {
                 </div>
               </div>
               <div className="flex justify-center mt-8">
-                <button
-                  href="/Form"
-                  className="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 transition duration-200"
-                >
-                  Registration Form
-                </button>
+                <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0     md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link href="/Form" onClick={() => setNavbar(!navbar)}>
+                    <div className="border-2 w-40   border-gray-400 text-white bg-red-900  hover:bg-black ">
+                      Registration
+                    </div>
+                  </Link>
+                </li>
               </div>
             </section>
 
@@ -150,6 +152,7 @@ function Courses() {
           </div>
         </div>
       </div>
+      <Navbar></Navbar>
       <Footer />
     </>
   );

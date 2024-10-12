@@ -26,7 +26,7 @@ const HeroSection = () => {
               Call Us
             </a>
             <a
-              href="#courses"
+              href="/Courses"
               className="bg-transparent border-2 border-white hover:bg-black hover:text-white-600 text-white font-semibold py-2 px-6 rounded-md transition"
             >
               Courses

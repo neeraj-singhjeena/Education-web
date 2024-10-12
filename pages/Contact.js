@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Footer from "./Footer";
-
+import Navbar from "./Navbar";
 export default function Contact() {
   // State for form fields
   const [formData, setFormData] = useState({
@@ -43,7 +43,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="bg-red-900 text-white min-h-screen">
+      <div className="bg-red-900 text-white min-h-screen mt-20">
         {/* Header Section */}
         <section className="bg-maroon-500 text-white p-8 text-center">
           <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
@@ -66,12 +66,11 @@ export default function Contact() {
             </p>
             <div>
               <h3 className="text-lg font-bold text-maroon-700">Address:</h3>
-              <p>Academic Suite India, Gurdaspur, Punjab, Pin: 144027</p>
+              <p>JCT THAPAR COLONY CHOHAL HOSHIARPUR PUNJAB</p>
             </div>
             <div>
               <h3 className="text-lg font-bold text-maroon-700">Phone:</h3>
-              <p>+91 84376-08821</p>
-              <p>01850-505060</p>
+              <p>+91 9988763872</p>
             </div>
             <div>
               <h3 className="text-lg font-bold text-maroon-700">Email:</h3>
@@ -99,11 +98,11 @@ export default function Contact() {
               <div>
                 <label className="block text-gray-300">Name</label>
                 <input
-                  type="text"
+                  type="text "
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full p-2 border border-gray-300 rounded-md"
+                  className="w-full p-2 border border-gray-300 text-black rounded-md"
                   placeholder="Enter your name"
                   required
                 />
@@ -115,7 +114,7 @@ export default function Contact() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full p-2 border border-gray-300 rounded-md"
+                  className="w-full p-2 border border-gray-300 text-black rounded-md"
                   placeholder="Enter your email"
                   required
                 />
@@ -127,7 +126,7 @@ export default function Contact() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full p-2 border border-gray-300 rounded-md"
+                  className="w-full p-2 border border-gray-300 text-black rounded-md"
                   placeholder="Subject"
                   required
                 />
@@ -138,7 +137,7 @@ export default function Contact() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full p-2 border border-gray-300 rounded-md"
+                  className="w-full p-2 border border-gray-300 text-black rounded-md"
                   rows="5"
                   placeholder="Your message"
                   required
@@ -146,14 +145,26 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-maroon-600 text-white p-2  border-2 rounded-md hover:bg-maroon-700 transition duration-300  hover:bg-red-600  border-gray-200  md:hover:text-red-600 md:hover:bg-transparent "
+                className="w-full bg-maroon-600  p-2 text-black border-2 rounded-md hover:bg-maroon-700 transition duration-300  hover:bg-red-600  border-gray-200  md:hover:text-red-600 md:hover:bg-transparent "
               >
                 Submit
               </button>
             </form>
+            <div className="flex justify-center items-center mt-10">
+              <div className="w-full max-w-screen-lg">
+                <iframe
+                  className="w-full h-64 md:h-96 rounded-lg shadow-lg"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.909934876927!2d90.40745691542787!3d23.751189494590406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85ff9d2f14b%3A0x915f3a2416c8da69!2sGoogle%20Bangladesh!5e0!3m2!1sen!2sbd!4v1616061491539!5m2!1sen!2sbd"
+                  allowFullScreen=""
+                  loading="lazy"
+                  title="Google Map"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
         <Footer></Footer>
+        <Navbar></Navbar>
       </div>
     </>
   );
