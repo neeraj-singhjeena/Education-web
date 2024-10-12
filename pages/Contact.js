@@ -10,19 +10,19 @@ export default function Contact() {
     message: "",
   });
 
-  // State for showing the success message
+  
   const [submitted, setSubmitted] = useState(false);
 
-  // Function to handle form submission
+  
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent form from reloading the page
 
-    // You can add form validation here if needed
+    
 
-    // After submission, show success message and clear the form
+    
     setSubmitted(true);
 
-    // Reset form fields
+    
     setFormData({
       name: "",
       email: "",
@@ -30,13 +30,13 @@ export default function Contact() {
       message: "",
     });
 
-    // Hide the success message after a few seconds (optional)
+    
     setTimeout(() => {
       setSubmitted(false);
     }, 3000); // Message disappears after 3 seconds
   };
 
-  // Function to update form fields
+  
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -78,7 +78,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Form Section */}
+          
           <div>
             <h2 className="text-2xl font-bold text-maroon-700 mb-4">
               Have Questions?
@@ -87,7 +87,7 @@ export default function Contact() {
               Please fill the form below, and we will get back to you.
             </p>
 
-            {/* Success Message */}
+            
             {submitted && (
               <p className="bg-white border-l-4 border-green-500 text-green-700 p-4 mb-4">
                 Submit successfully!
