@@ -2,7 +2,6 @@ import { useState } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 const CourseInquiryForm = () => {
-  // State for form inputs and success message
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -12,15 +11,11 @@ const CourseInquiryForm = () => {
   });
   const [successMessage, setSuccessMessage] = useState(false);
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can process the form data here (e.g., sending to an API)
 
-    // Show success message
     setSuccessMessage(true);
 
-    // Reset form fields
     setFormData({
       name: "",
       phone: "",
@@ -29,11 +24,9 @@ const CourseInquiryForm = () => {
       course: "",
     });
 
-    // Hide success message after 3 seconds
     setTimeout(() => setSuccessMessage(false), 3000);
   };
 
-  // Handle input change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -51,7 +44,6 @@ const CourseInquiryForm = () => {
             Course Inquiry Form
           </h2>
 
-          {/* Name input */}
           <div className="mb-4">
             <label className="block text-gray-700">Name:</label>
             <input
@@ -64,7 +56,6 @@ const CourseInquiryForm = () => {
             />
           </div>
 
-          {/* Phone Number input */}
           <div className="mb-4">
             <label className="block text-gray-700">Phone Number:</label>
             <input
@@ -77,7 +68,6 @@ const CourseInquiryForm = () => {
             />
           </div>
 
-          {/* Email input */}
           <div className="mb-4">
             <label className="block text-gray-700">Email:</label>
             <input
@@ -90,7 +80,6 @@ const CourseInquiryForm = () => {
             />
           </div>
 
-          {/* Date of Birth input */}
           <div className="mb-4">
             <label className="block text-gray-700">Date of Birth:</label>
             <input
@@ -103,7 +92,6 @@ const CourseInquiryForm = () => {
             />
           </div>
 
-          {/* Course selection */}
           <div className="mb-4">
             <label className="block text-gray-700">Course:</label>
             <select
@@ -128,7 +116,6 @@ const CourseInquiryForm = () => {
             Send
           </button>
 
-          {/* Success message */}
           {successMessage && (
             <p className="text-green-500 text-center mt-4">
               Form sent successfully!

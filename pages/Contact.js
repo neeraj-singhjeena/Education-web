@@ -2,7 +2,6 @@ import { useState } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 export default function Contact() {
-  // State for form fields
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -10,19 +9,13 @@ export default function Contact() {
     message: "",
   });
 
-  // State for showing the success message
   const [submitted, setSubmitted] = useState(false);
 
-  // Function to handle form submission
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent form from reloading the page
+    e.preventDefault();
 
-    // You can add form validation here if needed
-
-    // After submission, show success message and clear the form
     setSubmitted(true);
 
-    // Reset form fields
     setFormData({
       name: "",
       email: "",
@@ -30,22 +23,19 @@ export default function Contact() {
       message: "",
     });
 
-    // Hide the success message after a few seconds (optional)
     setTimeout(() => {
       setSubmitted(false);
-    }, 3000); // Message disappears after 3 seconds
+    }, 3000);
   };
 
-  // Function to update form fields
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
     <>
-      <div className="bg-red-900 text-white min-h-screen mt-20">
-        {/* Header Section */}
-        <section className="bg-maroon-500 text-white p-8 text-center">
+      <div className="x text-white min-h-screen mt-20">
+        <section className="bg-maroon-500 bg-red-900 text-white p-8 text-center">
           <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
           <p className="text-lg">
             Are you ready to embark on a transformative journey towards success?
@@ -54,8 +44,7 @@ export default function Contact() {
           </p>
         </section>
 
-        {/* Contact Details and Form Section */}
-        <div className="container mx-auto px-6 py-12 grid lg:grid-cols-2 gap-12">
+        <div className="container text-black mx-auto px-6 py-12 grid lg:grid-cols-2 gap-12">
           {/* Contact Details */}
           <div className="space-y-6">
             <h2 className="text-2xl font-bold text-maroon-700">Contact Us</h2>
@@ -78,25 +67,23 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Form Section */}
-          <div>
-            <h2 className="text-2xl font-bold text-maroon-700 mb-4">
+          <div className="text-black">
+            <h2 className="text-2xl text-black font-bold text-maroon-700 mb-4">
               Have Questions?
             </h2>
-            <p className="text-gray-300 mb-6">
+            <p className=" mb-6 text-black">
               Please fill the form below, and we will get back to you.
             </p>
 
-            {/* Success Message */}
             {submitted && (
               <p className="bg-white border-l-4 border-green-500 text-green-700 p-4 mb-4">
                 Submit successfully!
               </p>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label className="block text-gray-300">Name</label>
+            <form onSubmit={handleSubmit} className="space-y-4 text-black">
+              <div className="text-black">
+                <label className="block text-black">Name</label>
                 <input
                   type="text "
                   name="name"
@@ -108,7 +95,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label className="block text-gray-300">Email</label>
+                <label className="block text-gray-900">Email</label>
                 <input
                   type="email"
                   name="email"
@@ -120,7 +107,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label className="block text-gray-300">Subject</label>
+                <label className="block text-gray-900">Subject</label>
                 <input
                   type="text"
                   name="subject"
@@ -132,7 +119,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label className="block text-gray-300">Message</label>
+                <label className="block text-gray-900">Message</label>
                 <textarea
                   name="message"
                   value={formData.message}
