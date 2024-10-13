@@ -18,10 +18,10 @@ function Test() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Simulate form submission success
+    
     setIsSubmitted(true);
 
-    // Reset form fields after submission (optional)
+    
     setFormData({
       name: "",
       phone: "",
@@ -29,7 +29,7 @@ function Test() {
       ieltsTest: "",
     });
 
-    // Automatically hide the success message after 3 seconds (optional)
+   
     setTimeout(() => {
       setIsSubmitted(false);
     }, 3000);
@@ -44,7 +44,7 @@ function Test() {
             IELTS Inquiry Form
           </h2>
 
-          {/* Success Message */}
+         
           {isSubmitted && (
             <div className="mb-4 p-4 text-center text-green-700 bg-green-100 border border-green-300 rounded-md">
               Sent successfully!
@@ -68,7 +68,7 @@ function Test() {
               />
             </div>
 
-            {/* Phone Number Field */}
+            
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-semibold mb-2">
                 Phone Number: *
@@ -84,7 +84,7 @@ function Test() {
               />
             </div>
 
-            {/* Qualification Field */}
+            
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-semibold mb-2">
                 Qualification *
@@ -105,7 +105,7 @@ function Test() {
               </select>
             </div>
 
-            {/* IELTS/PTE Test Field */}
+          
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-semibold mb-2">
                 Have you given IELTS/PTE test before? *
@@ -134,7 +134,7 @@ function Test() {
               </div>
             </div>
 
-            {/* Submit Button */}
+            
             <div className="flex justify-center">
               <button
                 type="submit"
