@@ -10,13 +10,13 @@ function Navbar() {
       {/* Navbar Container */}
       <nav className="w-full bg-white fixed top-0 left-0 right-0 z-20 shadow-md">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:flex md:items-center md:px-8">
-          {/* Logo Section */}
+          
           <div className="flex items-center justify-between py-3 md:py-5">
             <Link href="/">
               <h2 className="text-2xl text-red-900 font-bold">HIGHER HEIGHT</h2>
             </Link>
 
-            {/* Hamburger Icon for Mobile */}
+          
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -37,7 +37,7 @@ function Navbar() {
             </div>
           </div>
 
-          {/* Menu Links for Larger Screens */}
+          
           <div className={`hidden md:block`}>
             <ul className="flex items-center space-x-6">
               <li className="text-xl font-medium text-black hover:text-red-700 transition">
@@ -69,7 +69,7 @@ function Navbar() {
             </ul>
           </div>
 
-          {/* Sidebar for Mobile */}
+          
           <div
             className={`fixed top-0 left-0 z-20 w-3/4 h-screen bg-white p-10 transition-transform transform ${
               navbar ? "translate-x-0" : "-translate-x-full"
