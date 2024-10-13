@@ -12,14 +12,14 @@ function Performance() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Simulate checking performance (this could be an API call in a real app)
+    
     if (studentID) {
       setMessage(`Performance details for Student ID: ${studentID}`);
     } else {
       setMessage("Please enter a valid Student ID.");
     }
 
-    // Clear the input after submission (optional)
+    
     setStudentID("");
   };
 
@@ -32,7 +32,7 @@ function Performance() {
             Check Daily Performance
           </h2>
 
-          {/* Message Display */}
+          
           {message && (
             <div className="mb-4 p-4 text-center text-blue-700 bg-blue-100 border border-blue-300 rounded-md">
               {message}
@@ -53,7 +53,7 @@ function Performance() {
               className="mb-4 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-700"
             />
 
-            {/* Submit Button */}
+           
             <button
               type="submit"
               className="bg-red-900 text-white font-semibold py-2 rounded-md transition hover:bg-red-800 focus:outline-none"
