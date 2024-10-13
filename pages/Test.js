@@ -9,8 +9,7 @@ function Test() {
     ieltsTest: "",
   });
 
-  const [isSubmitted, setIsSubmitted] = useState(false); // To track if form is submitted
-
+  const [isSubmitted, setIsSubmitted] = useState(false); 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
